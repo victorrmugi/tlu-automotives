@@ -51,7 +51,40 @@
     </div>
 </nav>
 
-    <hr>
+    <section class=" bg-light border-bottom py-3">
+        <div class="container">
+            <div class="row g-2 align-items-end">
+              <div class="col-md-4">
+        <label class="form-label" for="searchInput">Make / Model</label>
+        <input type="text" class="form-control" id="searchInput"
+               placeholder="e.g. Toyota, Audi...">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label" for="priceFilter">Max Price (KES)</label>
+        <select class="form-select" id="priceFilter">
+          <option value="">Any price</option>
+          <option>Under 5,000,000</option>
+          <option>5,000,000 – 10,000,000</option>
+          <option>Above 10,000,000</option>
+        </select>
+      </div> 
+      <div class="col-md-3">
+        <label class="form-label" for="transFilter">Transmission</label>
+        <select class="form-select" id="transFilter">
+          <option value="">Any</option>
+          <option>Automatic</option>
+          <option>Manual</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-brand w-100">
+          <i class="btn btn-light fw-semibold me-2"></i> Search
+        </button>
+      </div>
+            </div>
+        </div>
+
+    </section>
 
     </body>
     </html>
